@@ -24,8 +24,10 @@ this has happened.
 Example
 -------
 
-> $ cd $GOPATH/src/github.com/jinzhu/gorm
-> $ git-activity -min_occurence 10 | dot -Tpng -o graph.png
+```
+$ cd $GOPATH/src/github.com/jinzhu/gorm
+$ git-activity -min_occurence 10 | dot -Tpng -o graph.png
+```
 
 ![](./example.png)
 

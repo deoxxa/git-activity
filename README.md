@@ -21,6 +21,14 @@ history of a repository and recording, against each file, a list of other
 files that have been edited in the same commit, along with the number of times
 this has happened.
 
+Example
+-------
+
+> $ cd $GOPATH/src/github.com/jinzhu/gorm
+> $ git-activity -min_occurence 10 | dot -Tpng -o graph.png
+
+![](./example.png)
+
 License
 -------
 

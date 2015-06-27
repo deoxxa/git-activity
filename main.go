@@ -10,7 +10,8 @@ import (
 )
 
 var (
-	minWeight = flag.Int("min_occurence", 3, "minimum concurrent edit occurence")
+	minOccurence = flag.Int("min_occurence", 3, "minimum concurrent edit occurence")
+	maxWidth     = flag.Int("max_width", 10, "maximum line width for edges")
 )
 
 func main() {
@@ -115,8 +116,8 @@ func main() {
 
 			done[[2]string{f1, f2}] = true
 
-			if c >= *minWeight {
-				fmt.Printf("  %q -- %q [weight=%d penwidth=%f]\n", f1, f2, c, float32(c)/float32(max)*10)
+			if c >= *minOccurence {
+				fmt.Printf("  %q -- %q [weight=%d penwidth=%f]\n", f1, f2, c, float32(c)/float32(max)*float32(*maxWidth))
 			}
 		}
 	}

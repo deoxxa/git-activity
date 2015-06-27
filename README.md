@@ -26,7 +26,7 @@ Example
 
 ```
 $ cd $GOPATH/src/github.com/jinzhu/gorm
-$ git-activity -min_occurence 10 | dot -Tpng -o graph.png
+$ git-activity -min_occurrence 10 | dot -Tpng -o graph.png
 ```
 
 ![](./example.png)
